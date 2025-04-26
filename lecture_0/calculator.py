@@ -17,7 +17,7 @@ def main():
     print("x squared is", square(x))
     print("x squared is", square_1(x))
     print("x squared is", square_2(x))
-    
+        
 def square(n):
     return n * n
 

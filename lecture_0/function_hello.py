@@ -29,8 +29,9 @@ def main():
     new_name = input("Enter your new_name: ")
     new_hello(new_name)
       
-main()  
+ 
 def new_hello(new_parameter):
     print("Hello, " + new_parameter + "!")
-
+    
+main() 
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxx
