@@ -15,7 +15,7 @@ def main1():
     while i <= 3:
         print("meow")
         i += 1
-    print("Blast off!")
+    print("Blast off1!")
 
 main1()
 
@@ -28,6 +28,8 @@ def main2():
     while i < 3:
         print("meow")
         i += 1
-    print("Blast off!")
+    print("Blast off2!")
 main2()
 #xxxxxxxxxxxxxx
+
+
