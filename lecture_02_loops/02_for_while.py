@@ -11,6 +11,8 @@ def main():
         
 main()
 
+#xxxxxxxxxxx
+
 def main1():
     while True:
         n = int(input("Enter a number : "))
@@ -21,8 +23,9 @@ def main1():
         print("meow3")
         
 main1()
+#xxxxxxxxxxx
 
-def main3():
+def main2():
     n = get_number()
     meow(n)
     
@@ -38,4 +41,4 @@ def get_number():
         else:
             print("Please enter a positive number.")
 
-main3()
+main2()
