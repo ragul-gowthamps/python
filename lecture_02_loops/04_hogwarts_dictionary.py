@@ -41,6 +41,6 @@ def main3():
     print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     for student in new_students:
         print(student["name"], student["house"], student["patronus"], sep="-")
-
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 main3()    
