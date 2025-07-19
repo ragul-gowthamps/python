@@ -124,7 +124,65 @@
 
 
 # ///////////////////////////////////////////////////////
+#getter and setter methods
+# class Student:
+#     def __init__(self,name, house):
+#         self.name = name
+#         self.house = house
+            
+#     def __str__(self):
+#         return f"{self.name} from {self.house}"
 
+
+
+#     @property
+#     def name(self):
+#         return self._name
+    
+#     @name.setter
+#     def name(self, name):
+#         if not name:
+#             raise ValueError("Name cannot be empty")
+#         self._name = name   
+#     #getter
+#     @property
+#     def house(self):
+#         return self._house
+
+#     #setter
+#     @house.setter
+#     def house(self, house):
+#         house_lower = house.lower()
+#         if house_lower not in ["gryffindor", "hufflepuff", "ravenclaw", "slytherin","stark"]:
+#             raise ValueError("Invalid house")
+#         self._house = house
+        
+        
+# def main():
+#     student = get_student()
+    
+#     print(student)
+    
+   
+
+# def get_student():
+#     name = input("Name: ")
+#     house = input("House: ")
+    
+   
+#     return Student(name, house)
+
+
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+
+
+# ///////////////////////////////////////////////////////
+#class methods
 class Student:
     def __init__(self,name, house):
         self.name = name
@@ -133,46 +191,16 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
 
-
-
-    @property
-    def name(self):
-        return self._name
-    
-    @name.setter
-    def name(self, name):
-        if not name:
-            raise ValueError("Name cannot be empty")
-        self._name = name   
-    #getter
-    @property
-    def house(self):
-        return self._house
-
-    #setter
-    @house.setter
-    def house(self, house):
-        house_lower = house.lower()
-        if house_lower not in ["gryffindor", "hufflepuff", "ravenclaw", "slytherin","stark"]:
-            raise ValueError("Invalid house")
-        self._house = house
-        
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
+ 
         
 def main():
-    student = get_student()
-    
+    student = Student.get()    
     print(student)
-    
-   
-
-def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    
-   
-    return Student(name, house)
-
-
 
 if __name__ == "__main__":
     main()
